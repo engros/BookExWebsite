@@ -1,0 +1,2 @@
+module SampleconHelper
+end

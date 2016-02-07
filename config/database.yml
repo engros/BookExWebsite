@@ -13,9 +13,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
+  username: mkalmacin
+  password: Socnis69
   host: localhost
+
 
 development:
   <<: *default
@@ -50,5 +51,5 @@ test:
 production:
   <<: *default
   database: BookExWebsite_production
-  username: BookExWebsite
-  password: <%= ENV['BOOKEXWEBSITE_DATABASE_PASSWORD'] %>
+  username: mkalmacin
+  password: Socnis69

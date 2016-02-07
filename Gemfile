@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+gem 'devise' #for authentication
+gem 'will_paginate' #to paginate pages
+gem 'puma' #to use puma web server instead of webrick
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use mysql as the database for Active Record

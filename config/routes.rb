@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'samplecon/home'
+  get 'home_page/welcome' =>  'home_page#welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

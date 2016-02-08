@@ -10,24 +10,33 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   pool: 5
   username: mkalmacin
-  password: Socnis69
+  password: iammark01
   host: localhost
 
 
 development:
-  <<: *default
-  database: BookExWebsite_development
+  adapter: postgresql
+  encoding: unicode
+  database: bookexwebsite_development
+  pool: 5
+  username: mkalmacin
+  password: iammark01
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: BookExWebsite_test
+ adapter: postgresql
+ encoding: unicode
+ database: bookexwebsite_development
+ pool: 5
+ username: mkalmacin
+ password: iammark01
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,7 +58,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: BookExWebsite_production
-  username: mkalmacin
-  password: Socnis69
+ adapter: postgresql
+ encoding: unicode
+ database: bookexwebsite_development
+ pool: 5
+ username: mkalmacin
+ password: iammark00

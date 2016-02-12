@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'devise' #for authentication
-gem 'will_paginate' #to paginate pages
+gem 'will_paginate', '3.1.0' #to paginate pages
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5' #plugin that provides basic hashing algorithm to encrypt passwords
 gem 'puma' #to use puma web server instead of webrick
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

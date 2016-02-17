@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BookExWebsite</title>
+  <title><%= full_title(yield(:title)) %></title>
+  <link href="custom.css.scss" rel="stylesheet" type="text/css" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif}-->
 </head>
 <body>
+  <ul>
+    <li><%= link_to "Home",       "#" %></li>
+    <li><%= link_to "Log in",     "#" %></li>
+    <li><%= link_to "About Us",   "#" %></li>
+  </ul>
+
+  <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <h1>BODY</h1>
+
+  </div>
+
+
+
 
 <%= yield %>
 

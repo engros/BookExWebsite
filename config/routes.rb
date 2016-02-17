@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'users/new'
+
   get 'page/home'
 
   get 'page/advanced_search'

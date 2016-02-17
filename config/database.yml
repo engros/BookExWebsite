@@ -13,8 +13,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: mkalmacin
-  password: iammark01
+  username: ctanelyan
+  password: iamchris02
   host: localhost
 
 
@@ -23,8 +23,8 @@ development:
   encoding: unicode
   database: bookexwebsite_development
   pool: 5
-  username: mkalmacin
-  password: iammark01
+  username: ctanelyan
+  password: iamchris02
 
 
 # Warning: The database defined as "test" will be erased and
@@ -35,8 +35,8 @@ test:
  encoding: unicode
  database: bookexwebsite_development
  pool: 5
- username: mkalmacin
- password: iammark01
+ username: ctanelyan
+ password: iamchris02
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -62,5 +62,5 @@ production:
  encoding: unicode
  database: bookexwebsite_development
  pool: 5
- username: mkalmacin
- password: iammark00
+ username: ctanelyan
+ password: iamchris02

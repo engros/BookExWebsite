@@ -3,16 +3,20 @@
 
 /* universal */
 
-body {
-  margin: 0;
+main body {
+  //padding:1px 16px;
+  height: 1000px;
 }
 
-textarea {
+//style="margin-left:20%;padding:1px 16px;height:1000px;
+main textarea {
   resize: vertical;
 }
 
 
-ul{
+/* nav */
+
+aside ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,20 +27,22 @@ ul{
   overflow: auto;
 }
 
-li{
+aside li{
   display:block;
   background-color: palegreen;
   padding: 8px 0 8px 16px;
   text-direction: none;
 }
 
-li a.active {
+aside li a.active {
   background-color: darkgreen;
   color: white;
 
 }
 
-li a.hover:not(.active) {
-  background-color: #555;
+aside li a.hover:not(.active) {
+  background-color: palegreen;
   color: white;
 }
+
+

@@ -11,22 +11,15 @@
     </script>
   <![endif}-->
 </head>
+
+<aside>
+  <%= render 'layouts/aside' %>
+
+</aside>
+
 <body>
-  <ul>
-    <li><%= link_to "Home",       "#" %></li>
-    <li><%= link_to "Log in",     "#" %></li>
-    <li><%= link_to "About Us",   "#" %></li>
-  </ul>
-
-  <div style="margin-left:20%;padding:1px 16px;height:1000px;">
-    <h1>BODY</h1>
-
-  </div>
-
-
-
-
-<%= yield %>
+  <%= render 'layouts/main' %>
 
 </body>
+
 </html>
